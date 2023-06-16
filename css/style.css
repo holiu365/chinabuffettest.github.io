@@ -2,9 +2,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: myriad-variable, sans-serif;
+    font-variation-settings: 'wght' 400, 'wdth' 70;
     margin: 0;
-    /* background-color: #212227; */
     background-color: #d60f0f;
     color: black;
 }
@@ -153,8 +153,7 @@ footer{
     color: whitesmoke;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    gap: 300px;
+    justify-content: space-around;
     line-height: 50px;
     padding-bottom: 50px;
 }
