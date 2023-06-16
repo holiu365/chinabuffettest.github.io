@@ -5,13 +5,13 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     /* background-color: #212227; */
-    background-color: whitesmoke;
+    background-color: #d60f0f;
     color: black;
 }
 /* Header */
 header{
-    /* background-color: #212227; */
-    background-color: #e6332d;
+    background-color: #d60f0f;
+    /* background-color: #e6332d; */
     padding: 0;
     /* color: whitesmoke; */
     display: flex;
@@ -57,6 +57,7 @@ nav li a:hover{
     width: 100%;
     min-height: 50vh; /* 50% of the viewport height */
     max-height: 100vh; /* 100% of the viewport height */
+    background-color: rgb(85, 85, 85);
 }
 #bannerimg{
     /* width: 50%; */
@@ -66,9 +67,7 @@ nav li a:hover{
     min-height: 50vh; /* 50% of the viewport height */
     max-height: 100vh; /* 100% of the viewport height */
 }
-/* Article */
-/* article{
-} */
+
 /* Banner Content */
 .banner-content{
     position: absolute;
@@ -80,7 +79,7 @@ nav li a:hover{
     align-items: center;
     font-size: 50px;
     color: #e6332d;
-    /* color: #e6332d; */
+    color: whitesmoke;
     position: relative;
 }
 .banner-text-content h2{
@@ -105,6 +104,7 @@ nav li a:hover{
     height: 60px;
     text-decoration: none;
     transition: all .3s;
+    background-color: rgba(77, 77, 77, 0.41);
 }
 .call:hover, .doordash:hover{
     background-color:#e6332d;
@@ -113,22 +113,16 @@ nav li a:hover{
 }
 /* Pricing */
 #pricing{
-    /* color: whitesmoke; */
     color: black;
     text-align: center;
 }
 .pricing-content{
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-around;
 }
-.adult-price,.child-price{
-    /* border: 2px solid whitesmoke; */
-    border: 2px solid black;
-    padding: 15px;
-    border-radius: 15px;
-    width: 200px;
-    height: 300px;
+.pricing-content img{
+    max-height: 100vh;
+    /* max-width: 33vh; */
 }
 /* Menu*/
 #menu img{
@@ -141,7 +135,8 @@ nav li a:hover{
 }
 .menu-img{
     text-align: center;
-    background-color: #e6332d;
+    /* background-color: #e6332d; */
+    background-color: #d60f0f;
     width: 100%;
     margin: 0;
 }
@@ -153,8 +148,8 @@ nav li a:hover{
 }
 /* Footer */
 footer{
-    /* background-color: #B0413E; */
-    background-color: #e6332d;
+    background-color: #d60f0f;
+    /* background-color: #e6332d; */
     color: whitesmoke;
     padding: 20px;
     display: flex;
