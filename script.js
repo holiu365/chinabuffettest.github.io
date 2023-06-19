@@ -1,12 +1,15 @@
-var images = ["img/bannerpic-1.jpg", "img/bannerpic-2.jpg", "img/bannerpic-3.jpg","img/bannerpic-4.jpg","img/bannerpic-5.jpg"]
-var currentImgIndex = 0;
+var slides = document.getElementsByClassName("banner-slide");
+var currentSlideIndex = 0;
 
-setInterval(function() {
-    currentImgIndex++;
-
-    if (currentImgIndex == images.length) {
-        currentImgIndex = 0;
+function showSlides() {
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.opacity = 0;
     }
+    currentSlideIndex++;
+    if (currentSlideIndex == slides.length) {
+        currentSlideIndex = 0;
+    }
+    slides[currentSlideIndex].style.opacity = 1;
+}
 
-    document.getElementById("bannerimg").src = images[currentImgIndex];
-}, 8000);
+setInterval(showSlides, 6000);
