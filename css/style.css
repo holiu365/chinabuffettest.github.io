@@ -54,19 +54,17 @@ nav li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
     width: 100%;
-    min-height: 50vh; /* 50% of the viewport height */
-    max-height: 100vh; /* 100% of the viewport height */
+    height: auto;
+    /* max-height: 100vh; */
     background-color: rgb(85, 85, 85);
 }
 #bannerimg{
-    /* width: 50%; */
     width: 100%;
     opacity: 65%;
     position: relative;
-    min-height: 50vh; /* 50% of the viewport height */
-    max-height: 100vh; /* 100% of the viewport height */
+    min-height: 50vh;
+    max-height: 100vh;
 }
 
 /* Banner Content */
@@ -128,6 +126,7 @@ nav li a:hover{
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    line-height: 20px;
 }
 .pricing-img{
     color: black;
@@ -150,21 +149,18 @@ nav li a:hover{
 .menu-img img{
     box-sizing: border-box;
     width: 100%;
-    margin: 45px;
+    padding: 20px 50px;
 }
 /* Footer */
 footer{
     background-color: #d60f0f;
-    /* background-color: #e6332d; */
     color: whitesmoke;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     line-height: 50px;
     padding-bottom: 50px;
-}
-footer p{
-    margin: 0;
 }
 .map{
     width: 50%;
@@ -183,7 +179,29 @@ footer p{
 }
 
 @media (max-width: 750px) {
+    .header-text{
+        font-size: 15px;
+    }
     .pricing-img{
         grid-template-columns: 1fr;
+    }
+    .banner-text-content{
+        font-size: 30px;
+    }
+    .pricing-text{
+        font-size: 30px;
+    }
+    .menu-img img{
+        padding: 10px 0;
+    }
+    .buttons{
+        scale: .75;
+    }
+    footer{
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .map{
+        width: 100%;
     }
 }
