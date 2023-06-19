@@ -5,16 +5,15 @@ body{
     font-family: myriad-variable, sans-serif;
     font-variation-settings: 'wght' 400, 'wdth' 70;
     margin: 0;
-    /* background-color: #d60f0f; */
     background-color: #ffeacf;
     color: whitesmoke;
+    overflow-x: hidden;
 }
+
 /* Header */
 header{
     background-color: #d60f0f;
-    /* background-color: #e6332d; */
     padding: 0;
-    /* color: whitesmoke; */
     display: flex;
     width: 100%;
     position: fixed;
@@ -24,7 +23,7 @@ header{
     align-items: center;
 }
 .header-text{
-    padding: 20px 20px;
+    padding: 0 20px;
     text-decoration: none;
     color: whitesmoke;
     transition: all 0.5s;
@@ -38,10 +37,10 @@ nav ul{
     display: flex;
     justify-content: space-around;
     white-space: nowrap;
-    width: 50%;
+    width: 30%;
 }
 nav li a{
-    margin-left: 40px;
+    padding: 0 1.5em;
     text-decoration: none;
     color: whitesmoke;
     transition: all 0.5s;
@@ -49,6 +48,7 @@ nav li a{
 nav li a:hover{
     color: #B0413E;
 }
+
 /* Banner */
 .banner{
     display: flex;
@@ -56,15 +56,14 @@ nav li a:hover{
     align-items: center;
     width: 100%;
     height: auto;
-    /* max-height: 100vh; */
     background-color: rgb(85, 85, 85);
 }
 .banner-slideshow, .banner-slide{
     width: 100%;
     opacity: 65%;
     position: relative;
-    min-height: 50vh;
-    max-height: 100vh;
+    height: 100vh;
+    object-fit: cover;
 }
 .banner-slide{
     position: absolute;
@@ -186,7 +185,9 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
     }
-    
+    nav li a{
+        padding: 0 1em;
+    }
     .menu-img{
         grid-column: 1 / 2;
     }
@@ -195,6 +196,12 @@ footer{
 @media (max-width: 750px) {
     .header-text{
         font-size: 15px;
+    }
+    nav{
+        /* scale: 0.8; */
+    }
+    nav li a{
+        padding: .5em;
     }
     .pricing-img{
         grid-template-columns: 1fr;
