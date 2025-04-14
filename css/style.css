@@ -140,14 +140,75 @@ nav li a:hover{
 .pricing-img{
     color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     text-align: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .pricing-img img{
     max-height: 60vh;
     max-width: 80%;
 }
+.food-icon img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+/* Pricing Cards */
+.price-card {
+    background-color: #d60f0f;
+    border-radius: 15px;
+    padding: 20px;
+    color: #FFDB58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    width: 80%;
+    max-width: 250px;
+    height: 450px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.price-card h2 {
+    font-size: 3rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.price-info {
+    text-align: center;
+    width: 100%;
+}
+
+.price-info p {
+    font-size: 1.8rem;
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.age {
+    font-size: 1.2rem !important;
+    margin-top: -10px !important;
+}
+
+.togo-price {
+    font-size: 4rem !important;
+    font-weight: bold;
+}
+
+.per-lb {
+    font-size: 2.5rem;
+}
+
 /* Menu*/
 .menu-img{
     display: flex;
@@ -177,7 +238,13 @@ footer{
 
 /* Responsive for smaller windows */
 @media (max-width: 1180px) {
-
+    .price-card {
+        margin-bottom: 30px;
+    }
+    .pricing-img {
+        max-width: 600px;
+        gap: 20px;
+    }
     .banner-content{
         scale: 1;
     }
@@ -208,6 +275,7 @@ footer{
     }
     .pricing-img{
         grid-template-columns: 1fr;
+        max-width: 300px;
     }
     .banner-text-content{
         font-size: 30px;
@@ -227,5 +295,29 @@ footer{
     }
     .map{
         width: 100%;
+    }
+    .price-card {
+        height: auto;
+        padding: 20px 10px;
+    }
+    
+    .price-card h2 {
+        font-size: 2.5rem;
+    }
+    
+    .price-info p {
+        font-size: 1.5rem;
+    }
+    
+    .price {
+        font-size: 1.8rem;
+    }
+    
+    .togo-price {
+        font-size: 3rem !important;
+    }
+    
+    .per-lb {
+        font-size: 2rem;
     }
 }
